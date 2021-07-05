@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>white_board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="feild">
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+            <form>
+                <button onclick="undo_last()" type="button" class="button">undo</button>
+                <button onclick="redo_last()" type="button" class="button">redo</button>
+                <button onclick="enterText()" type="button" class="button">insert</button>
+                <button onclick="clear_canvas()" type="button" class="button">delete</button>
+
+            </form>
+            <form id="dtool">
+                <!-- <button onclick="undo_last()" type="button" class="button">undo</button>
+                <button onclick="redo_last()" type="button" class="button">redo</button>
+                <button onclick="enterText()" type="button" class="button">insert</button>
+                <button onclick="clear_canvas()" type="button" class="button">delete</button> -->
+
+
+                <button  type="button" class="pen drawing" >pencil</button>
+                <button  type="button" class="erase drawing" >eraser</button>
+
+                <button type="button" class="straight drawing" >line</button>
+                <button  type="button" class="square drawing" >rectangle</button>
+                <button  type="button" class="oval drawing" >circle</button>
+                
+            </form>
+
+            <div onclick="change_color(this)" class="colors" style="background: red;"></div>
+            <div onclick="change_color(this)" class="colors" style="background: green;"></div>
+            <div onclick="change_color(this)" class="colors" style="background: blue;"></div>
+            <div onclick="change_color(this)" class="colors" style="background: yellow;"></div>
+            <div onclick="change_color(this)" class="colors" style="background: white;"></div>
+            <div onclick="change_color(this)" class="colors" style="background: black;"></div>
+            <form>
+                <input oninput = "draw_color = this.value" type="color" class="color-picker">
+                <input oninput = "draw_width = this.value" type="range" min="1" max="30" class="pen-range" >
+            </form>
+            <!-- <div onclick="enterText()" class="insert">i</div> -->
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

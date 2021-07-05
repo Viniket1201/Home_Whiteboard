@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #313131;
+}
+
+canvas{
+    box-shadow: -3px -3px 9px 6px black,
+                 3px 2px 9px 8px rgb(252, 249, 249);
+    cursor: pointer;
+}
+
+
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.tools .colors{
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    align-self: center;
+    margin: 0 2px;
+}
+
+/* .tools .insert{
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    align-self: center;
+    margin: 0 5px;
+} */
+.tools .button{
+    align-self: center;
+    width: 80px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    background: black;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.tools .drawing{
+    align-self: center;
+    width: 80px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    background: black;
+    font-weight: bold;
+    margin: 0 3px;
+
+}
+.color-picker{
+    align-self: center;
+    height: 50px;
+    margin: 0 5px;
+}
+.pen-range{
+    align-self: center;
+    margin: 0 5px;
+}
